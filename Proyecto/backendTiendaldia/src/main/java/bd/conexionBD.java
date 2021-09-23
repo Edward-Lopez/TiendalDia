@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class conexionBD {
+public class ConexionBD {
     private String BD_driver;
     private String url;
     private String db;
@@ -21,7 +21,7 @@ public class conexionBD {
     private Statement stmt;
     private ResultSet rs;
     
-    public conexionBD(){
+    public ConexionBD(){
         BD_driver = "com.mysql.jdbc.Driver";
         host = "localhost:3306";
         db = "tiendaaldia";
@@ -32,13 +32,13 @@ public class conexionBD {
         try{
             Class.forName(BD_driver);
         }catch(ClassNotFoundException ex){
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
         }
         try{
             con = DriverManager.getConnection(url,username,password);
             con.setTransactionIsolation(8);
         }catch(SQLException ex){
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
         }    
     }
     
@@ -47,7 +47,7 @@ public class conexionBD {
             con.setAutoCommit(true);
             return con;
         }catch(SQLException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);  
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);  
           return null;
         }
     }
@@ -56,7 +56,7 @@ public class conexionBD {
         try {
             con.close();
         }catch(SQLException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);  
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);  
         }
     }
     
@@ -65,7 +65,7 @@ public class conexionBD {
             con.commit();
             return true;
         }catch(SQLException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         }   
     }
@@ -75,7 +75,7 @@ public class conexionBD {
             con.rollback();
             return true;
         }catch(SQLException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         }   
     }
@@ -104,13 +104,13 @@ public class conexionBD {
             rs = stmt.executeQuery(query.toString());
             return rs.getInt("id" + nombreTabla);
         }catch(SQLException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return 0;
         }catch(RuntimeException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return 0;
         }catch(Exception ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return 0;
         } 
     }
@@ -138,13 +138,13 @@ public class conexionBD {
             stmt = con.createStatement();
             return stmt.execute(query.toString());
         } catch (SQLException ex) {
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }catch(RuntimeException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         }catch(Exception ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         } 
     }
@@ -156,13 +156,13 @@ public class conexionBD {
             rs = stmt.executeQuery(query);
             return rs;
         } catch (SQLException ex) {
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }catch(RuntimeException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return null;
         }catch(Exception ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return null;
         } 
     }
@@ -174,13 +174,13 @@ public class conexionBD {
             rs = stmt.executeQuery(query);
             return rs;
         } catch (SQLException ex) {
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }catch(RuntimeException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return null;
         }catch(Exception ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return null;
         } 
     }
@@ -191,13 +191,13 @@ public class conexionBD {
             stmt = con.createStatement();
             return stmt.execute(query);
         } catch (SQLException ex) {
-            Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }catch(RuntimeException ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         }catch(Exception ex){
-          Logger.getLogger(conexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return false;
         } 
     }

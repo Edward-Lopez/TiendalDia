@@ -1,31 +1,30 @@
-
 package controllers;
 
 import DAO.DAOUsuarios;
 import TO.TOUsuarios;
 import java.util.ArrayList;
 
+public class CtrlUsuarios {
 
-public class ctrlUsuarios {
-    
     DAOUsuarios usuariosDAO;
 
-    public ctrlUsuarios() {
+    public CtrlUsuarios() {
         this.usuariosDAO = new DAOUsuarios();
     }
-          
+
     public ArrayList<TOUsuarios> consultarUsuarios() {
-      return usuariosDAO.consultarUsuarios();
+        return usuariosDAO.consultarUsuarios();
     }
-    
+
     public int insertarUsuarios(TOUsuarios toUsuarios) {
-       return usuariosDAO.insertarUsuarios(toUsuarios);
+        return usuariosDAO.insertarUsuarios(toUsuarios);
     }
-    
+
     public boolean actualizarUsuarios(TOUsuarios toUsuarios) {
         return usuariosDAO.actualizarUsuarios(toUsuarios);
     }
+
     public boolean eliminarUsuarios(int idUsuarios) {
-       return usuariosDAO.eliminarUsuarios(idUsuarios);
+        return usuariosDAO.eliminarUsuarios(idUsuarios);
     }
 }

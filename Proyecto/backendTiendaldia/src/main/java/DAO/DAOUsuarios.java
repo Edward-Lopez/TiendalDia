@@ -23,7 +23,7 @@ public class DAOUsuarios {
             ResultSet rs = con.consultar(nombreTabla);
             while (rs.next()) {
                 toUsuario = new TOUsuarios();
-                toUsuario.setNombresUsuarios(rs.getString("NombreUsuarios"));
+                toUsuario.setNombresUsuarios(rs.getString("NombresUsuarios"));
                 toUsuario.setApellidosUsuarios(rs.getString("ApellidosUsuarios"));
                 toUsuario.setTipoIdentificacion(rs.getString("TipoIdentificacion"));
                 toUsuario.setIdentificacion(rs.getString("Identificacion"));

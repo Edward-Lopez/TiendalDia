@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 DAO\DAOTendero.class
 bd\ConexionBD.class
 TO\TOTendero.class
@@ -10,4 +11,8 @@ DAO\DAOProducto.class
 TO\TOUsuarios.class
 TO\TOCategoria.class
 DAO\DAOUsuarios.class
+=======
+controllers\CtrlUsuarios.class
+DAO\DAOProducto.class
+>>>>>>> bcfac26b91264fcae916c7ff835bb3f8514ae5d9
 DAO\DAOCategoria.class

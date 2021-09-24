@@ -4,11 +4,11 @@ import DAO.DAOUsuarios;
 import TO.TOUsuarios;
 import java.util.ArrayList;
 
-public class CtrlUsuarios {
+public class ctrlUsuarios {
 
     DAOUsuarios usuariosDAO;
 
-    public CtrlUsuarios() {
+    public ctrlUsuarios() {
         this.usuariosDAO = new DAOUsuarios();
     }
 

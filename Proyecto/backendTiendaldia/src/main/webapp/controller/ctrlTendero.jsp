@@ -1,17 +1,13 @@
-<%-- 
-    Document   : ctrlTendero
-    Created on : 22/09/2021, 7:34:54 p.Â m.
-    Author     : RMUSR0002
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%@page import="java.util.ArrayList"%>
+<%@page import="TO.TOTendero"%>
+<%@page import="controllers.ctrlTendero"%>
+<%@page import="com.google.gson.Gson"%>
+<%ctrlTendero tenderoCtrl = new ctrlTendero();
+String opcion = request.getParameter("opcion");
+if("listar".equals(opcion)){
+    ArrayList<TOTendero> tendero =tenderoCtrl.consultarTendero();
+    out.print(new Gson().toJson(tendero));
+}else{
+    out.print("opción no válida");
+}
+%>

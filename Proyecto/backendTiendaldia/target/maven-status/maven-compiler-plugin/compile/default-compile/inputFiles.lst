@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTendero.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProveedor.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOUsuarios.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOCategoria.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProducto.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProducto.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\bd\ConexionBD.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOUsuarios.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTransacciones.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\CtrlUsuarios.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTendero.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProveedor.java
+C:\Users\Personal\Documents\Github\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOCategoria.java
+=======
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProveedor.java
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOCategoria.java
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTendero.java
@@ -11,3 +26,4 @@ C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTW
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProveedor.java
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\bd\ConexionBD.java
 C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTendero.java
+>>>>>>> bcfac26b91264fcae916c7ff835bb3f8514ae5d9

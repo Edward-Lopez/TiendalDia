@@ -27,7 +27,7 @@ public class ConexionBD {
         db = "tiendaaldia";
         url = "jdbc:mysql://" + host + "/" +db;
         username = "root";
-        password = "root";
+        password = "1234";
         
         try{
             Class.forName(BD_driver);
@@ -83,7 +83,7 @@ public class ConexionBD {
     //columnas = [idUsuarios, nombres, apellidos]
     //valores = [1, camila,pimentel]
     public int insertar(String nombreTabla,String[] columnas, String[] valores ){
-        StringBuilder query = new StringBuilder ("INSERT INTO");
+        StringBuilder query = new StringBuilder ("INSERT INTO ");
         query.append(nombreTabla);
         query.append("(");
         
@@ -118,9 +118,9 @@ public class ConexionBD {
     
     
     public boolean actualizar (String nombreTabla,String[] columnas, String[] valores, int id ){
-       StringBuilder query = new StringBuilder ("UPDATE");
+       StringBuilder query = new StringBuilder ("UPDATE ");
        query.append(nombreTabla);
-       query.append("SET");
+       query.append(" SET ");
        for (int i = 0; i < columnas.length; i++){
             query.append(columnas[i]);
             query.append(" = '");
@@ -150,7 +150,7 @@ public class ConexionBD {
     }
     
     public ResultSet consultar(String nombreTabla){
-        String query = "SELECT * FROM" + nombreTabla;
+        String query = "SELECT * FROM " + nombreTabla;
         try {
             stmt = con.createStatement();
             rs = stmt.executeQuery(query);
@@ -168,7 +168,7 @@ public class ConexionBD {
     }
     
     public ResultSet consultarvista(String nombreVista){
-        String query = "SELECT * FROM" + nombreVista;
+        String query = "SELECT * FROM " + nombreVista;
         try {
             stmt = con.createStatement();
             rs = stmt.executeQuery(query);
@@ -186,7 +186,7 @@ public class ConexionBD {
     }
     
     public boolean eliminar (String nombreTabla, int id){
-        String query = "DELETE FROM" + nombreTabla + "WHERE id" + nombreTabla + " = " + id;
+        String query = "DELETE FROM " + nombreTabla + " WHERE id" + nombreTabla + " = " + id;
         try {
             stmt = con.createStatement();
             return stmt.execute(query);

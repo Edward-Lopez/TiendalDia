@@ -3,12 +3,13 @@ D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\jav
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProducto.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOCategoria.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProveedor.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTendero.java
+D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOtendero.java
+D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlTendero.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTransacciones.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOCategoria.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProducto.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\bd\ConexionBD.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTendero.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\CtrlUsuarios.java
+D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlUsuarios.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOUsuarios.java
 D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOUsuarios.java

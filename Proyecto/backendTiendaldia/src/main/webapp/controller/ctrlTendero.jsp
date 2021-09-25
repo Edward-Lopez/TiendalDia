@@ -5,7 +5,7 @@
 <%ctrlTendero tenderoCtrl = new ctrlTendero();
 String opcion = request.getParameter("opcion");
 if("listar".equals(opcion)){
-    ArrayList<TOTendero> tendero =tenderoCtrl.consultarTendero();
+    ArrayList<TOTendero> tendero = tenderoCtrl.consultarTendero();
     out.print(new Gson().toJson(tendero));
 }else{
     out.print("opción no válida");

@@ -46,7 +46,6 @@ public class DAOTendero{
 
     }
     
-    /*
     public int insertarTendero(TOTendero toTenderos) {
         String[] valores = {toTenderos.getUsuario(),toTenderos.getContrasena(),String.valueOf(toTenderos.getIdUsuarios()),toTenderos.getNombreTienda()};
         try {
@@ -80,5 +79,5 @@ public class DAOTendero{
             return false;
         }
 
-    }*/
+    }
 }

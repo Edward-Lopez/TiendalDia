@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class DAOTendero{
     private final ConexionBD con = new ConexionBD();
     private final String nombreTabla = "Tendero";
-    private final String[] columnas = {"vistatendero"};
+    private final String[] columnas = {"usuario","contrasena","idUsuario","nombreTienda"};
             
     public DAOTendero() {
     }
@@ -23,7 +23,7 @@ public class DAOTendero{
             ResultSet rs = con.consultar(nombreTabla);
             while (rs.next()) {
                 toTendero = new TOTendero();
-                toTendero.setNombresUsuarios(rs.getString("NombreUsuarios"));
+                toTendero.setNombresUsuarios(rs.getString("NombresUsuarios"));
                 toTendero.setApellidosUsuarios(rs.getString("ApellidosUsuarios"));
                 toTendero.setTipoIdentificacion(rs.getString("TipoIdentificacion"));
                 toTendero.setIdentificacion(rs.getString("Identificacion"));
@@ -46,8 +46,9 @@ public class DAOTendero{
 
     }
     
+    /*
     public int insertarTendero(TOTendero toTenderos) {
-        String[] valores = {toTenderos.getNombresUsuarios(),toTenderos.getApellidosUsuarios(),toTenderos.getTipoIdentificacion(),toTenderos.getIdentificacion(),toTenderos.getDireccionUsuarios(),toTenderos.getTelefonoUsuarios(),toTenderos.getCorreoUsuarios()};
+        String[] valores = {toTenderos.getUsuario(),toTenderos.getContrasena(),String.valueOf(toTenderos.getIdUsuarios()),toTenderos.getNombreTienda()};
         try {
             return con.insertar(nombreTabla, columnas, valores);
           
@@ -59,9 +60,9 @@ public class DAOTendero{
     }
     
     public boolean actualizarTendero(TOTendero toTenderos) {
-        String[] valores = {toTenderos.getNombresUsuarios(), toTenderos.getApellidosUsuarios(), toTenderos.getTipoIdentificacion(), toTenderos.getIdentificacion(), toTenderos.getDireccionUsuarios(), toTenderos.getTelefonoUsuarios(), toTenderos.getCorreoUsuarios()};
+        String[] valores = {toTenderos.getUsuario(),toTenderos.getContrasena(),String.valueOf(toTenderos.getIdUsuarios()),toTenderos.getNombreTienda()};
         try {
-            return con.actualizar(nombreTabla, columnas, valores, toTenderos.getIdUsuarios());
+            return con.actualizar(nombreTabla, columnas, valores, toTenderos.getIdTendero());
 
         } catch (Exception ex) {
             System.out.println("Error en DAOTendero.insertarTendero:" + ex.getMessage());
@@ -70,14 +71,14 @@ public class DAOTendero{
 
     }
     
-      public boolean eliminarTendero(int idUsuarios) {
+      public boolean eliminarTendero(int idTendero) {
         try {
-            return con.eliminar(nombreTabla,idUsuarios);
+            return con.eliminar(nombreTabla,idTendero);
 
         } catch (Exception ex) {
             System.out.println("Error en DAOTendero.eliminarTendero:" + ex.getMessage());
             return false;
         }
 
-    }
+    }*/
 }

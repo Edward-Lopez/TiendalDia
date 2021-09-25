@@ -1,6 +1,6 @@
 package TO;
 
-public class TOTendero {
+public class TOTendero extends TOUsuarios{
     private int idTendero;
     private String usuario;
     private String contrasena;

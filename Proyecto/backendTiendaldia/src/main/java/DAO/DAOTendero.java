@@ -23,18 +23,18 @@ public class DAOTendero{
             ResultSet rs = con.consultar(nombreTabla);
             while (rs.next()) {
                 toTendero = new TOTendero();
-                toTendero.setNombresUsuarios(rs.getString("NombresUsuarios"));
-                toTendero.setApellidosUsuarios(rs.getString("ApellidosUsuarios"));
-                toTendero.setTipoIdentificacion(rs.getString("TipoIdentificacion"));
-                toTendero.setIdentificacion(rs.getString("Identificacion"));
-                toTendero.setDireccionUsuarios(rs.getString("DireccionUsuarios"));
-                toTendero.setTelefonoUsuarios(rs.getString("TelefonoUsuarios"));
-                toTendero.setCorreoUsuarios(rs.getString("CorreoUsuarios"));
-                toTendero.setIdUsuarios(rs.getInt("IdUsuarios"));
-                toTendero.setIdTendero(rs.getInt("idTendero"));
-                toTendero.setUsuario(rs.getString("usuario"));
-                toTendero.setContrasena(rs.getString("contrasena"));
-                toTendero.setNombreTienda(rs.getString("nombreTienda"));
+//                toTendero.setNombresUsuarios(rs.getString("NombresUsuarios"));
+//                toTendero.setApellidosUsuarios(rs.getString("ApellidosUsuarios"));
+//                toTendero.setTipoIdentificacion(rs.getString("TipoIdentificacion"));
+//                toTendero.setIdentificacion(rs.getString("Identificacion"));
+//                toTendero.setDireccionUsuarios(rs.getString("DireccionUsuarios"));
+//                toTendero.setTelefonoUsuarios(rs.getString("TelefonoUsuarios"));
+//                toTendero.setCorreoUsuarios(rs.getString("CorreoUsuarios"));
+                toTendero.setIdUsuario(rs.getInt("IdUsuario"));
+                toTendero.setIdTendero(rs.getInt("IdTendero"));
+                toTendero.setUsuario(rs.getString("Usuario"));
+                toTendero.setContrasena(rs.getString("Contrasena"));
+                toTendero.setNombreTienda(rs.getString("NombreTienda"));
 
                 tendero.add(toTendero);
             }

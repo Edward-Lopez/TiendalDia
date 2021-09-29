@@ -4,9 +4,9 @@ public class TOTendero extends TOUsuarios{
     private int idTendero;
     private String usuario;
     private String contrasena;
-    private String idUsuario;
+    private int idUsuario;
     private String nombreTienda;
-    private int idUsuarios;
+//    private int idUsuarios;
     
     public TOTendero(){
         
@@ -24,7 +24,7 @@ public class TOTendero extends TOUsuarios{
         return contrasena;
     }
 
-    public String getIdUsuario() {
+    public int getIdUsuario() {
         return idUsuario;
     }
 
@@ -32,9 +32,9 @@ public class TOTendero extends TOUsuarios{
         return nombreTienda;
     }
 
-    public int getIdUsuarios() {
-        return idUsuarios;
-    }
+//    public int getIdUsuarios() {
+//        return idUsuarios;
+//    }
 
     public void setIdTendero(int idTendero) {
         this.idTendero = idTendero;
@@ -48,7 +48,7 @@ public class TOTendero extends TOUsuarios{
         this.contrasena = contrasena;
     }
 
-    public void setIdUsuario(String idUsuario) {
+    public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }
 
@@ -56,7 +56,7 @@ public class TOTendero extends TOUsuarios{
         this.nombreTienda = nombreTienda;
     }
 
-    public void setIdUsuarios(int idUsuarios) {
-        this.idUsuarios = idUsuarios;
-    }
+//    public void setIdUsuarios(int idUsuarios) {
+//        this.idUsuarios = idUsuarios;
+//    }
 }

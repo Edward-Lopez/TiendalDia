@@ -1,15 +1,15 @@
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTransacciones.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProveedor.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProducto.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOCategoria.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProveedor.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTendero.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlTendero.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTransacciones.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOCategoria.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProducto.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\bd\ConexionBD.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTendero.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlUsuarios.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOUsuarios.java
-D:\MinTIC\Desarrollo Software\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOUsuarios.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlTendero.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProveedor.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOCategoria.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTendero.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\controllers\ctrlUsuarios.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProducto.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOCategoria.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOUsuarios.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOUsuarios.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOTransacciones.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOProducto.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\TO\TOProveedor.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\bd\ConexionBD.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTransacciones.java
+C:\Users\Hogar\Desktop\MINTIC\DESARROLLO DE SOFTWARE CICLO 3\DESARROLLO DE SOFTWARE\SEMANA 2\TiendalDia\Proyecto\backendTiendaldia\src\main\java\DAO\DAOTendero.java

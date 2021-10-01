@@ -7,6 +7,11 @@ String opcion = request.getParameter("opcion");
 if("listar".equals(opcion)){
     ArrayList<TOTendero> tendero = tenderoCtrl.consultarTendero();
     out.print(new Gson().toJson(tendero));
+}else if("login".equals(opcion)){
+    String datos = request.getParameter("datos");
+    TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
+    tenderoTO = tenderoCtrl.verificarTendero(tenderoTO);
+    out.print(new Gson().toJson(tendero));
 }else{
     out.print("opción no válida");
 }

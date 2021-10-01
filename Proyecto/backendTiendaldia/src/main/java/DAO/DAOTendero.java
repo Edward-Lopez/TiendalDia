@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class DAOTendero{
     private final ConexionBD con = new ConexionBD();
     private final String nombreTabla = "Tendero";
+    private final String nombreVista = "vistausuariotendero";
     private final String[] columnas = {"usuario","contrasena","idUsuario","nombreTienda"};
             
     public DAOTendero() {
@@ -20,21 +21,21 @@ public class DAOTendero{
         ArrayList<TOTendero> tendero = new ArrayList<>();
         TOTendero toTendero;
         try {
-            ResultSet rs = con.consultar(nombreTabla);
+            ResultSet rs = con.consultar(nombreVista);
             while (rs.next()) {
                 toTendero = new TOTendero();
-//                toTendero.setNombresUsuarios(rs.getString("NombresUsuarios"));
-//                toTendero.setApellidosUsuarios(rs.getString("ApellidosUsuarios"));
-//                toTendero.setTipoIdentificacion(rs.getString("TipoIdentificacion"));
-//                toTendero.setIdentificacion(rs.getString("Identificacion"));
-//                toTendero.setDireccionUsuarios(rs.getString("DireccionUsuarios"));
-//                toTendero.setTelefonoUsuarios(rs.getString("TelefonoUsuarios"));
-//                toTendero.setCorreoUsuarios(rs.getString("CorreoUsuarios"));
-                toTendero.setIdUsuario(rs.getInt("IdUsuario"));
-                toTendero.setIdTendero(rs.getInt("IdTendero"));
-                toTendero.setUsuario(rs.getString("Usuario"));
-                toTendero.setContrasena(rs.getString("Contrasena"));
-                toTendero.setNombreTienda(rs.getString("NombreTienda"));
+                toTendero.setNombresUsuarios(rs.getString("nombresUsuarios"));
+                toTendero.setApellidosUsuarios(rs.getString("apellidosUsuarios"));
+                toTendero.setTipoIdentificacion(rs.getString("tipoIdentificacion"));
+                toTendero.setIdentificacion(rs.getString("identificacion"));
+                toTendero.setDireccionUsuarios(rs.getString("direccionUsuarios"));
+                toTendero.setTelefonoUsuarios(rs.getString("telefonoUsuarios"));
+                toTendero.setCorreoUsuarios(rs.getString("correoUsuarios"));
+                toTendero.setIdUsuarios(rs.getInt("idUsuarios"));
+//                toTendero.setIdTendero(rs.getInt("IdTendero"));
+                toTendero.setUsuario(rs.getString("usuario"));
+//                toTendero.setContrasena(rs.getString("Contrasena"));
+                toTendero.setNombreTienda(rs.getString("nombreTienda"));
 
                 tendero.add(toTendero);
             }

@@ -1,6 +1,6 @@
 package TO;
 
-public class TOTendero extends TOUsuarios {
+public class TOTendero extends TOUsuarios { 
 
     private int idTendero;
     private String usuario;
@@ -8,19 +8,19 @@ public class TOTendero extends TOUsuarios {
     private int idUsuario;
     private String nombreTienda;
     private int idUsuarios;
-    private String nombresUsuarios;
+ /*   private String nombresUsuarios;      
     private String apellidosUsuarios;
     private String tipoIdentificacion;
     private String identificacion;
     private String direccionUsuarios;
     private String telefonoUsuarios;
-    private String correoUsuarios;
+    private String correoUsuarios;        Parece que estos atributos no van acá porque TOTendero ya los hereda       */  
 
     public TOTendero() {
 
     }
 
-    public TOTendero(String nombreTienda, String nombresUsuarios, String apellidosUsuarios, String tipoIdentificacion, String identificacion, String direccionUsuarios, String telefonoUsuarios, String correoUsuarios) {
+ /*   public TOTendero(String nombreTienda, String nombresUsuarios, String apellidosUsuarios, String tipoIdentificacion, String identificacion, String direccionUsuarios, String telefonoUsuarios, String correoUsuarios) {
         this.nombreTienda = nombreTienda;
         this.nombresUsuarios = nombresUsuarios;
         this.apellidosUsuarios = apellidosUsuarios;
@@ -30,7 +30,7 @@ public class TOTendero extends TOUsuarios {
         this.telefonoUsuarios = telefonoUsuarios;
         this.correoUsuarios = correoUsuarios;
     }
-
+*/
       
     public int getIdTendero() {
         return idTendero;

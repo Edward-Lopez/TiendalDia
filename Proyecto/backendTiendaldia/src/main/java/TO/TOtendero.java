@@ -26,10 +26,10 @@ public class TOTendero extends TOUsuarios {
         this.apellidosUsuarios = apellidosUsuarios;
         this.tipoIdentificacion = tipoIdentificacion;
         this.identificacion = identificacion;
-        this.direccionUsuarios = direccionUsuarios;
+        this.direccionUsuarios = direccionUsuarios;            
         this.telefonoUsuarios = telefonoUsuarios;
         this.correoUsuarios = correoUsuarios;
-    }
+    }                                         El bloque anterior del código puede borrarse(ya que tenemos el constructor vacío) o bien solo mantener la línea 23 y en la 24 usar el comando super, declarando dentro de él los atributos que viene de la clase padre
 */
       
     public int getIdTendero() {

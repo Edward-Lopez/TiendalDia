@@ -1,17 +1,37 @@
 package TO;
 
-public class TOTendero extends TOUsuarios{
+public class TOTendero extends TOUsuarios {
+
     private int idTendero;
     private String usuario;
     private String contrasena;
     private int idUsuario;
     private String nombreTienda;
-//    private int idUsuarios;
-    
-    public TOTendero(){
-        
+    private int idUsuarios;
+    private String nombresUsuarios;
+    private String apellidosUsuarios;
+    private String tipoIdentificacion;
+    private String identificacion;
+    private String direccionUsuarios;
+    private String telefonoUsuarios;
+    private String correoUsuarios;
+
+    public TOTendero() {
+
     }
 
+    public TOTendero(String nombreTienda, String nombresUsuarios, String apellidosUsuarios, String tipoIdentificacion, String identificacion, String direccionUsuarios, String telefonoUsuarios, String correoUsuarios) {
+        this.nombreTienda = nombreTienda;
+        this.nombresUsuarios = nombresUsuarios;
+        this.apellidosUsuarios = apellidosUsuarios;
+        this.tipoIdentificacion = tipoIdentificacion;
+        this.identificacion = identificacion;
+        this.direccionUsuarios = direccionUsuarios;
+        this.telefonoUsuarios = telefonoUsuarios;
+        this.correoUsuarios = correoUsuarios;
+    }
+
+      
     public int getIdTendero() {
         return idTendero;
     }
@@ -32,9 +52,9 @@ public class TOTendero extends TOUsuarios{
         return nombreTienda;
     }
 
-//    public int getIdUsuarios() {
-//        return idUsuarios;
-//    }
+    public int getIdUsuarios() {
+        return idUsuarios;
+    }
 
     public void setIdTendero(int idTendero) {
         this.idTendero = idTendero;
@@ -56,7 +76,7 @@ public class TOTendero extends TOUsuarios{
         this.nombreTienda = nombreTienda;
     }
 
-//    public void setIdUsuarios(int idUsuarios) {
-//        this.idUsuarios = idUsuarios;
-//    }
+    public void setIdUsuarios(int idUsuarios) {
+        this.idUsuarios = idUsuarios;
+    }
 }

@@ -1,6 +1,6 @@
 package TO;
 
-public class TOTendero extends TOUsuarios {
+public class TOTendero extends TOUsuarios { 
 
     private int idTendero;
     private String usuario;
@@ -8,29 +8,29 @@ public class TOTendero extends TOUsuarios {
     private int idUsuario;
     private String nombreTienda;
     private int idUsuarios;
-    private String nombresUsuarios;
+ /*   private String nombresUsuarios;      
     private String apellidosUsuarios;
     private String tipoIdentificacion;
     private String identificacion;
     private String direccionUsuarios;
     private String telefonoUsuarios;
-    private String correoUsuarios;
+    private String correoUsuarios;        Parece que estos atributos no van acá porque TOTendero ya los hereda       */  
 
     public TOTendero() {
 
     }
 
-    public TOTendero(String nombreTienda, String nombresUsuarios, String apellidosUsuarios, String tipoIdentificacion, String identificacion, String direccionUsuarios, String telefonoUsuarios, String correoUsuarios) {
+ /*   public TOTendero(String nombreTienda, String nombresUsuarios, String apellidosUsuarios, String tipoIdentificacion, String identificacion, String direccionUsuarios, String telefonoUsuarios, String correoUsuarios) {
         this.nombreTienda = nombreTienda;
         this.nombresUsuarios = nombresUsuarios;
         this.apellidosUsuarios = apellidosUsuarios;
         this.tipoIdentificacion = tipoIdentificacion;
         this.identificacion = identificacion;
-        this.direccionUsuarios = direccionUsuarios;
+        this.direccionUsuarios = direccionUsuarios;            
         this.telefonoUsuarios = telefonoUsuarios;
         this.correoUsuarios = correoUsuarios;
-    }
-
+    }                                         El bloque anterior del código puede borrarse(ya que tenemos el constructor vacío) o bien solo mantener la línea 23 y en la 24 usar el comando super, declarando dentro de él los atributos que viene de la clase padre
+*/
       
     public int getIdTendero() {
         return idTendero;

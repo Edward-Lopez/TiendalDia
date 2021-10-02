@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package controllers;
 
 import DAO.DAOTendero;
 import TO.TOTendero;
+import TO.TOUsuarios;
 import java.util.ArrayList;
 
-/**
- *
- * @author RMUSR0002
- */
 public class ctrlTendero {
+    
     DAOTendero tenderoDAO;
 
     public ctrlTendero() {
@@ -24,11 +17,16 @@ public class ctrlTendero {
         return tenderoDAO.consultarTendero();
     }
 
-    public int insertarTendero(TOTendero toTendero) {
+    public int insertarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
+        ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
+//        toTendero.setIdUsuariosTendero(usuariosCtrl.insertarUsuarios(toUsuarios));
         return tenderoDAO.insertarTendero(toTendero);
     }
 
-    public boolean actualizarTendero(TOTendero toTendero) {
+    public boolean actualizarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
+        ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
+//        toUsuarios.setIdUsuarios(toTendero.getIdUsuariosTendero());
+        usuariosCtrl.actualizarUsuarios(toUsuarios);
         return tenderoDAO.actualizarTendero(toTendero);
     }
 

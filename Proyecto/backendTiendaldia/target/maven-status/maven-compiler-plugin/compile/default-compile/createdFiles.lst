@@ -1,9 +1,0 @@
-TO\TOProveedor.class
-DAO\DAOProveedor.class
-TO\TOProducto.class
-controllers\ctrlUsuarios.class
-TO\TOTransacciones.class
-DAO\DAOProducto.class
-TO\TOUsuarios.class
-TO\TOCategoria.class
-DAO\DAOCategoria.class

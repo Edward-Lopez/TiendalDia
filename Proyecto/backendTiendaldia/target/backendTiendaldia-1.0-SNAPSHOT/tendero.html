@@ -193,8 +193,11 @@
                                             id="exampleInputPassword" placeholder="Contraseña" ng-model="tc.tendero.contrasena">
                                     </div>                                    
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block" ng-click="tc.guardar ()">
+                                <a href="login.html" class="btn btn-primary btn-user btn-block" ng-click="tc.guardar()">
                                     Registrar tendero
+                                </a>
+                                <a href="login.html" class="btn btn-primary btn-user btn-block" ng-click="tc.limpiar()">
+                                    Limpiar
                                 </a>
                                                                 
                             </form>
@@ -212,22 +215,24 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>Nombres</th>
+                                            <th>Apellidos</th>
+                                            <th>Identificación</th>
+                                            <th>Usuario</th>
+                                            <th>Telefono</th>
+                                            <th>Editar</th>
+                                            <th>Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>Nombres</th>
+                                            <th>Apellidos</th>
+                                            <th>Identificación</th>
+                                            <th>Usuario</th>
+                                            <th>Telefono</th>
+                                            <th>Editar</th>
+                                            <th>Eliminar</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -236,42 +241,10 @@
                                             <td>{{tendero.apellidosUsuarios}}</td>
                                             <td>{{tendero.identificacion}}</td>
                                             <td>{{tendero.usuario}}</td>
-                                            <td>{{tendero.telefonUsuarios}}</td>
+                                            <td>{{tendero.telefonoUsuarios}}</td>
+                                            <td><a href="#" class="btn btn-primary btn-user btn-block" ng-click="tc.seleccionar(tendero.idTendero)">Editar</a></td>
+                                            <td><a href="#" class="btn btn-primary btn-user btn-block" ng-click="tc.eliminar(tendero.idTendero)">Eliminar</a></td>
                                         </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
-                                        </tr>
-                                                                            
-                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -371,9 +344,65 @@
                 url: 'http://localhost:8080/backendTiendaldia/tendero.html',
                 params: parametros
             }).then(function(res){
+               console.log(res);
                controlador.tendero = res.data.tendero;
+               alert("Registro guardado");
+               controlador.listar();
+               controlador.limpiar();
                
             });
+        };
+        
+        controlador.limpiar = function(){
+            controlador.tendero.nombresUsuarios = "";
+            controlador.tendero.apellidosUsuarios = "";
+            controlador.tendero.tipoIdentificacion = "";
+            controlador.tendero.identificacion = "";
+            controlador.tendero.nombreTienda = "";
+            controlador.tendero.direccionUsuarios = "";
+            controlador.tendero.telefonoUsuarios = "";
+            controlador.tendero.correoUsuarios = "";
+            controlador.tendero.usuario = "";
+            controlador.tendero.contrasena = "";
+        };
+        
+        controlador.guardar = function(){
+            if (controlador.tendero.idUsuario == "undefined"){ 
+                var parametros = {opcion: "insertar", datos: JSON.stringify(controlador.tendero)}
+                $http({
+                    method: 'POST',
+                    url: 'http://localhost:8080/backendTiendaldia/tendero.html',
+                    params: parametros
+                }).then(function(res){
+                   console.log(res);
+                   controlador.tendero = res.data.tendero;
+                   alert("Registro guardado");
+                   controlador.listar();
+                   controlador.limpiar();
+
+                });
+            }else{
+                var parametros = {opcion: "actualizar", datos: JSON.stringify(controlador.tendero)}
+                $http({
+                    method: 'POST',
+                    url: 'http://localhost:8080/backendTiendaldia/tendero.html',
+                    params: parametros
+                }).then(function(res){
+                   console.log(res);
+                   controlador.tendero = res.data.tendero;
+                   alert("Registro guardado");
+                   controlador.listar();
+                   controlador.limpiar();
+
+                });
+            }
+        };
+        
+        controlador.seleccionar = function(id){
+            for (var i = 0; i < controlador.tendero.length; i++){
+                if(id == controlador.tendero[i].idTendero)
+                    controlador.tendero = controlador.tendero[i];
+            }
         };
     }
 </script>

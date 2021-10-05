@@ -81,4 +81,30 @@ public class DAOTendero{
         }
 
     }
+      
+     public TOTendero verificarTendero(String usuario, String contrasena) {
+        String condiciones = " usuario = '" + usuario + "' AND contrasena = '" + contrasena + "'";
+        TOTendero toTendero= new TOTendero();
+        try {
+            ResultSet rs = con.consultarWhere(nombreTabla, condiciones);
+            while (rs.next()) {
+                toTendero.setNombresUsuarios(rs.getString("nombresUsuarios"));
+                toTendero.setApellidosUsuarios(rs.getString("apellidosUsuarios"));
+                toTendero.setTipoIdentificacion(rs.getString("tipoIdentificacion"));
+                toTendero.setIdentificacion(rs.getString("identificacion"));
+                toTendero.setDireccionUsuarios(rs.getString("direccionUsuarios"));
+                toTendero.setTelefonoUsuarios(rs.getString("telefonoUsuarios"));
+                toTendero.setCorreoUsuarios(rs.getString("correoUsuarios"));
+ //               toTendero.setIdUsuarios(rs.getInt("idUsuarios"));
+                toTendero.setIdTendero(rs.getInt("IdTendero"));
+                toTendero.setUsuario(rs.getString("usuario"));
+                toTendero.setContrasena(rs.getString("Contrasena"));
+                toTendero.setNombreTienda(rs.getString("nombreTienda"));
+            }
+            return toTendero;
+        } catch (SQLException ex) {
+            System.out.println("Error en DAOTendero.verificarTendero:" + ex.getMessage());
+            return null;
+        }
+     }
 }

@@ -94,7 +94,9 @@ public class ConexionBD {
         }
         query.append(") VALUES (");
          for (int i = 0; i < valores.length; i++){
+            query.append("'"); 
             query.append(valores[i]);
+            query.append("'");
             if((i+1) < valores.length)
                 query.append(",");
         }

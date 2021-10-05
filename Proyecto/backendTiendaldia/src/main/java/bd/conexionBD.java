@@ -101,8 +101,16 @@ public class ConexionBD {
         query.append(")"); 
         try {
             stmt = con.createStatement();
-            rs = stmt.executeQuery(query.toString());
-            return rs.getInt("id" + nombreTabla);
+            int colsAfectadas = stmt.executeUpdate(query.toString(), Statement.RETURN_GENERATED_KEYS);
+            if(colsAfectadas == 0){
+                throw new SQLException("No se pudo guardar el registro");           
+            }
+            ResultSet idsGenerados = stmt.getGeneratedKeys();
+            if(idsGenerados.next()){
+                return idsGenerados.getInt(1);
+            }else{
+                return 0;
+            }
         }catch(SQLException ex){
           Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
           return 0;

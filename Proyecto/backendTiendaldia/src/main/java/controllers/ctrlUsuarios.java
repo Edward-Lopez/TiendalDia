@@ -16,9 +16,9 @@ public class ctrlUsuarios {
         return usuariosDAO.consultarUsuarios();
     }
     
-    public TOUsuarios verificarUsuario(TOUsuarios usuario) {
+ /*   public TOUsuarios verificarUsuario(TOUsuarios usuario) {
         return usuariosDAO.verificarUsuario(usuario.getUsuario(), usuario.getClave());
-    }
+    }     */
 
     public int insertarUsuarios(TOUsuarios toUsuarios) {
         return usuariosDAO.insertarUsuarios(toUsuarios);

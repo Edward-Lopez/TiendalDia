@@ -92,14 +92,15 @@
         var controlador = this;
         
         controlador.login = function(){
-            var parametros = {opcion: "login", datos: JSON.stringify(controlador)}
+            var parametros = {opcion: "login", datos: JSON.stringify(controlador)};
             $http({
                 method: 'POST',
                 url: 'http://localhost:8080/backendTiendaldia/tendero.html',
                 params: parametros
             }).then(function(res){
+               console.log(res);
                controlador.respuesta = res.data;
-               if(res.data.idTendero == 0){
+               if(res.data.idTendero === 0){
                    alert("El usuario y/o clave son incorrectos");
                }else{
                    window.location.href = "tendero.html";

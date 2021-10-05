@@ -15,6 +15,10 @@ public class ctrlUsuarios {
     public ArrayList<TOUsuarios> consultarUsuarios() {
         return usuariosDAO.consultarUsuarios();
     }
+    
+    public TOUsuarios verificarUsuario(TOUsuarios usuario) {
+        return usuariosDAO.verificarUsuario(usuario.getUsuario(), usuario.getClave());
+    }
 
     public int insertarUsuarios(TOUsuarios toUsuarios) {
         return usuariosDAO.insertarUsuarios(toUsuarios);

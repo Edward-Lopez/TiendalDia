@@ -17,6 +17,10 @@ public class ctrlTendero {
         return tenderoDAO.consultarTendero();
     }
 
+    public TOTendero verificarTendero(TOTendero tendero) {
+        return tenderoDAO.verificarTendero(tendero.getUsuario(), tendero.getContrasena());
+    }
+    
     public int insertarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
         ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
 //        toTendero.setIdUsuariosTendero(usuariosCtrl.insertarUsuarios(toUsuarios));

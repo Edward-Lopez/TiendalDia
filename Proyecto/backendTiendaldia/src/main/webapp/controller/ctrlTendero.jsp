@@ -11,7 +11,7 @@ if("listar".equals(opcion)){
     String datos = request.getParameter("datos");
     TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
     tenderoTO = tenderoCtrl.verificarTendero(tenderoTO);
-    out.print(new Gson().toJson(tendero));
+    out.print(new Gson().toJson(tenderoTO));
 }else if("insertar".equals(opcion)){
     String datos = request.getParameter("datos");
     TOUsuarios usuariosTO = new Gson().fromJson(datos, TOUsuarios.class);

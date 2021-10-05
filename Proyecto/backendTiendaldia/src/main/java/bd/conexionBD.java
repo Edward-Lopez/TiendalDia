@@ -167,6 +167,25 @@ public class ConexionBD {
         } 
     }
     
+    
+    public ResultSet consultarWhere(String nombreTabla, String condiciones){
+        String query = "SELECT * FROM " + nombreTabla + " WHERE " + condiciones;
+        try {
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(query);
+            return rs;
+        } catch (SQLException ex) {
+            Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }catch(RuntimeException ex){
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          return null;
+        }catch(Exception ex){
+          Logger.getLogger(ConexionBD.class.getName()).log(Level.SEVERE, null, ex);
+          return null;
+        } 
+    }
+    
     public ResultSet consultarvista(String nombreVista){
         String query = "SELECT * FROM " + nombreVista;
         try {

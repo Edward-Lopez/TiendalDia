@@ -12,6 +12,20 @@ if("listar".equals(opcion)){
     TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
     tenderoTO = tenderoCtrl.verificarTendero(tenderoTO);
     out.print(new Gson().toJson(tendero));
+}else if("insertar".equals(opcion)){
+    String datos = request.getParameter("datos");
+    TOUsuarios usuariosTO = new Gson().fromJson(datos, TOUsuarios.class);
+    TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
+    tenderoCtrl.insertarTendero(tenderoTO, usuariosTO);
+    out.print(new Gson().toJson(usuariosTO));
+}else if("actualizar".equals(opcion)){
+    String datos = request.getParameter("datos");
+    TOUsuarios usuariosTO = new Gson().fromJson(datos, TOUsuarios.class);
+    TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
+    tenderoCtrl.actualizarTendero(tenderoTO, usuariosTO);
+    out.print(new Gson().toJson(usuariosTO));
+}else if("eliminar".equals(opcion)){
+    
 }else{
     out.print("opción no válida");
 }

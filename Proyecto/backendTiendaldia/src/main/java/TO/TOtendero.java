@@ -7,7 +7,7 @@ public class TOTendero extends TOUsuarios {
     private String contrasena;
     private int idUsuario;
     private String nombreTienda;
-    private int idUsuarios;
+    private int idUsuariosTendero;
  /*   private String nombresUsuarios;      
     private String apellidosUsuarios;
     private String tipoIdentificacion;
@@ -52,8 +52,8 @@ public class TOTendero extends TOUsuarios {
         return nombreTienda;
     }
 
-    public int getIdUsuarios() {
-        return idUsuarios;
+    public int getIdUsuariosTendero() {
+        return idUsuariosTendero;
     }
 
     public void setIdTendero(int idTendero) {
@@ -76,7 +76,7 @@ public class TOTendero extends TOUsuarios {
         this.nombreTienda = nombreTienda;
     }
 
-    public void setIdUsuarios(int idUsuarios) {
-        this.idUsuarios = idUsuarios;
+    public void setIdUsuariosTendero(int idUsuarios) {
+        this.idUsuariosTendero = idUsuarios;
     }
 }

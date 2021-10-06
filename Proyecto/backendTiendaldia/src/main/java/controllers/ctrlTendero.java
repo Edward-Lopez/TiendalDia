@@ -23,13 +23,13 @@ public class ctrlTendero {
     
     public int insertarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
         ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
-//        toTendero.setIdUsuariosTendero(usuariosCtrl.insertarUsuarios(toUsuarios));
+        toTendero.setIdUsuariosTendero(usuariosCtrl.insertarUsuarios(toUsuarios));
         return tenderoDAO.insertarTendero(toTendero);
     }
 
     public boolean actualizarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
         ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
-//        toUsuarios.setIdUsuarios(toTendero.getIdUsuariosTendero());
+        toUsuarios.setIdUsuarios(toTendero.getIdUsuariosTendero());
         usuariosCtrl.actualizarUsuarios(toUsuarios);
         return tenderoDAO.actualizarTendero(toTendero);
     }

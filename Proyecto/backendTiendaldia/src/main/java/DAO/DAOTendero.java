@@ -32,9 +32,9 @@ public class DAOTendero{
                 toTendero.setTelefonoUsuarios(rs.getString("telefonoUsuarios"));
                 toTendero.setCorreoUsuarios(rs.getString("correoUsuarios"));
                 toTendero.setIdUsuarios(rs.getInt("idUsuarios"));
-//                toTendero.setIdTendero(rs.getInt("IdTendero"));
+                toTendero.setIdTendero(rs.getInt("IdTendero"));
                 toTendero.setUsuario(rs.getString("usuario"));
-//                toTendero.setContrasena(rs.getString("Contrasena"));
+                toTendero.setContrasena(rs.getString("Contrasena"));
                 toTendero.setNombreTienda(rs.getString("nombreTienda"));
 
                 tendero.add(toTendero);
@@ -95,7 +95,7 @@ public class DAOTendero{
                 toTendero.setDireccionUsuarios(rs.getString("direccionUsuarios"));
                 toTendero.setTelefonoUsuarios(rs.getString("telefonoUsuarios"));
                 toTendero.setCorreoUsuarios(rs.getString("correoUsuarios"));
- //               toTendero.setIdUsuarios(rs.getInt("idUsuarios"));
+                toTendero.setIdUsuariosTendero(rs.getInt("idUsuariosTendero"));
                 toTendero.setIdTendero(rs.getInt("IdTendero"));
                 toTendero.setUsuario(rs.getString("usuario"));
                 toTendero.setContrasena(rs.getString("Contrasena"));

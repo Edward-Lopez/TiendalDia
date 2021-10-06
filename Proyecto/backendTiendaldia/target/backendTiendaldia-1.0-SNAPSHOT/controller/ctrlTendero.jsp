@@ -25,9 +25,10 @@ if("listar".equals(opcion)){
     TOTendero tenderoTO = new Gson().fromJson(datos, TOTendero.class);
     tenderoCtrl.actualizarTendero(tenderoTO, usuariosTO);
     out.print(new Gson().toJson(usuariosTO));
-}else if("eliminar".equals(opcion)){
-    
-}else{
+//}else if("eliminar".equals(opcion)){
+//    
+//}
+    }else{
     out.print("opción no válida");
 }
 %>

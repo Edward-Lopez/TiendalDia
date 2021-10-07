@@ -325,18 +325,16 @@
     function initController($http){
         var controlador = this;
         
-        controlador.listar = function(){
+        controlador.login = function(){
             var parametros = {opcion: "listar"}
             $http({
                 method: 'POST',
                 url: 'http://localhost:8080/backendTiendaldia/tendero.html',
                 params: parametros
             }).then(function(res){
-//                alert("listar 2");
-                console.log(res);
-               controlador.tendero = res.data;
+               controlador.tendero = res.data.tendero;
+               
             });
-                
         };
         
         controlador.insertar = function(){
@@ -402,7 +400,7 @@
         
         controlador.seleccionar = function(id){
             for (var i = 0; i < controlador.tendero.length; i++){
-                if(id === controlador.tendero[i].idTendero)
+                if(id == controlador.tendero[i].idTendero)
                     controlador.tendero = controlador.tendero[i];
             }
         };

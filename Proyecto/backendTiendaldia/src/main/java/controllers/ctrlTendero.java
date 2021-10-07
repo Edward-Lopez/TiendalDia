@@ -23,7 +23,6 @@ public class ctrlTendero {
     
     public int insertarTendero(TOTendero toTendero, TOUsuarios toUsuarios) {
         ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
-        toUsuarios.setTipoIdentificacion("Tendero");
         toTendero.setIdUsuariosTendero(usuariosCtrl.insertarUsuarios(toUsuarios));
         return tenderoDAO.insertarTendero(toTendero);
     }
@@ -34,10 +33,8 @@ public class ctrlTendero {
         usuariosCtrl.actualizarUsuarios(toUsuarios);
         return tenderoDAO.actualizarTendero(toTendero);
     }
-    
-       public boolean eliminarTendero(TOUsuarios toUsuarios) {
-        tenderoDAO.eliminarTendero(toUsuarios.getIdUsuarios());
-        ctrlUsuarios usuariosCtrl = new ctrlUsuarios();
-        return usuariosCtrl.eliminarUsuarios(toUsuarios.getIdUsuarios());
+
+    public boolean eliminarTendero(int idTendero) {
+        return tenderoDAO.eliminarTendero(idTendero);
     }
 }

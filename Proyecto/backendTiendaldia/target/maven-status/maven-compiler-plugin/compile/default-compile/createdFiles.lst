@@ -1,0 +1,15 @@
+controllers\ctrlTendero.class
+DAO\DAOTendero.class
+bd\ConexionBD.class
+TO\TOTendero.class
+TO\TOProveedor.class
+DAO\DAOTransacciones.class
+DAO\DAOProveedor.class
+TO\TOProducto.class
+controllers\ctrlUsuarios.class
+TO\TOTransacciones.class
+DAO\DAOProducto.class
+TO\TOUsuarios.class
+TO\TOCategoria.class
+DAO\DAOUsuarios.class
+DAO\DAOCategoria.class

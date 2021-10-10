@@ -1,0 +1,5 @@
+Añadir en "Libraries" el paquete gson-2.2.2.jar y mysql-conector-java-8.0.26
+
+Modificar la vista, que etsá en el archivo script_vista.txt 
+
+Cambiarle la contraseña de acceso a la base de datos en ConexionBD

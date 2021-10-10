@@ -27,7 +27,7 @@ public class ConexionBD {
         db = "tiendaaldia";
         url = "jdbc:mysql://" + host + "/" +db;
         username = "root";
-        password = "1234";
+        password = "D_marin18!";
         
         try{
             Class.forName(BD_driver);

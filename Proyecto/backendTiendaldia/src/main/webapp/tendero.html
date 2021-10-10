@@ -193,7 +193,7 @@
                                             id="exampleInputPassword" placeholder="Contraseña" ng-model="tc.tendero.contrasena">
                                     </div>                                    
                                 </div>
-                                <a href="tendero.html" class="btn btn-primary btn-user btn-block" ng-click="tc.guardar()">
+                                <a href="#" class="btn btn-primary btn-user btn-block" ng-click="tc.guardar()">
                                     Registrar tendero
                                 </a>
                                 <a href="#" class="btn btn-primary btn-user btn-block" ng-click="tc.limpiar()">
@@ -367,17 +367,18 @@
         };
         
         controlador.guardar = function(){
-            if (controlador.tendero.idUsuario == "undefined"){ 
+            if (controlador.tendero.idUsuario === undefined){ 
                 var parametros = {opcion: "insertar", datos: JSON.stringify(controlador.tendero)}
-                $http({
+                $.ajax({
                     method: 'POST',
-                    url: 'http://localhost:8080/backendTiendaldia/tendero.html',
-                    params: parametros
-                }).then(function(res){
-                   console.log(res);
-                   controlador.tendero = res.data.tendero;
+                    url: 'controller/ctrlTendero.jsp',
+                    data: parametros
+                }).done(function(res){
+                   var data = JSON.parse(res);
+                   console.log(data);
+                   controlador.tendero = data;
                    alert("Registro guardado");
-                   controlador.listar();
+                   //controlador.listar();
                    controlador.limpiar();
 
                 });

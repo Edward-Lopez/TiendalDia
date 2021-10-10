@@ -1,0 +1,1 @@
+Añadir en "Libraries" el paquete gson-2.2.2.jar y mysql-conector-java-8.0.26
